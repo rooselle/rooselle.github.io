@@ -1,0 +1,17 @@
+{
+  "name": "rooselle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.1.1"
+  }
+}
