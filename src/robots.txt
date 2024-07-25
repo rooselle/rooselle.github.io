@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://roselle.co/sitemap.xml
+Disallow: /mentions-legales
+Disallow: /admin/

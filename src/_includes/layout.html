@@ -1,0 +1,41 @@
+---
+title: Développeuse web indépendante
+description: Développeuse web indépendante, je contribue au développement de l’application web de votre entreprise ou de celle de votre client·e.
+openGraphTitle: Développeuse web indépendante
+openGraphUrl: https://roselle.co/
+openGraphImg: https://roselle.co/img/opengraph_roselle_grey_on_light_pink.png
+openGraphDescription: Développeuse web indépendante, je contribue au développement de l’application web de votre entreprise ou de celle de votre client·e.
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Roselle | {{ description }}" />
+
+    <meta property="og:title" content="{{ openGraphTitle }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ openGraphUrl }}" />
+    <meta property="og:image" content="{{ openGraphImg }}" />
+    <meta property="og:site_name" content="Roselle" />
+    <meta property="og:description" content="{{ openGraphDescription }}" />
+    <meta property="og:locale" content="fr" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+
+    {{ extra_meta }}
+
+    <title>{{ title }} | Roselle</title>
+
+    <script defer data-domain="roselle.co" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+{{ content }}
+</body>
+</html>
