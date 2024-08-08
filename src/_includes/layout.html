@@ -38,13 +38,10 @@ openGraphDescription: Développeuse web indépendante, je contribue au développ
     <script defer data-domain="roselle.co" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
-<header role="banner" class="navbar navbar-expand navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="/" aria-label="Roselle : Page d'accueil">
-            <img src="../img/logo_roselle_grey_on_light_pink.png" alt="logo Roselle" height="210" width="600" />
-        </a>
-    </div>
-</header>
-{{ content }}
+{% include 'header.html' %}
+<main role="main" id="main">
+    {{ content }}
+</main>
+{% include 'footer.html' %}
 </body>
 </html>
