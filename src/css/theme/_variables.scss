@@ -411,7 +411,7 @@ $navbar-light-color: var(--#{$prefix}black) !default;
 $navbar-light-hover-color: var(--#{$prefix}black) !default;
 $navbar-light-active-color: var(--#{$prefix}black) !default;
 $navbar-light-disabled-color: var(--#{$prefix}black) !default;
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$gray-600}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$gray-600}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: transparent !default;
 
 $navbar-dark-brand-color: var(--#{$prefix}white) !default;
@@ -537,8 +537,8 @@ $input-group-addon-bg: $input-bg !default;
 $form-check-input-bg: var(--#{$prefix}gray-300) !default;
 $form-check-input-border: 0 !default;
 $form-check-input-border-radius: var(--#{$prefix}border-radius-pill) !default;
-$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path fill='none' stroke='#{rgba($white, 1)}' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round' d='M10.5 0.785156L4.3125 7.21373L1.5 4.29165'/></svg>") !default;
-$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path fill='none' stroke='#{rgba($white, 1)}' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round' d='M10.5 0.785156L4.3125 7.21373L1.5 4.29165'/></svg>") !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 12 8'><path fill='none' stroke='#{rgba($white, 1)}' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round' d='M10.5 0.785156L4.3125 7.21373L1.5 4.29165'/></svg>") !default;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 12 8'><path fill='none' stroke='#{rgba($white, 1)}' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round' d='M10.5 0.785156L4.3125 7.21373L1.5 4.29165'/></svg>") !default;
 
 $form-check-input-active-filter: none !default;
 $form-check-input-bg-size: 75%;
@@ -550,17 +550,17 @@ $form-switch-color: rgba($white, 1) !default;
 $form-switch-width: 2.5rem !default;
 $form-switch-padding-start: $form-switch-width + 0.75rem !default;
 $form-switch-height: 1.5rem !default;
-$form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
+$form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
 
 $form-switch-focus-color: $form-switch-color !default;
-$form-switch-focus-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
+$form-switch-focus-bg-image: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
 
-$form-switch-dark-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{rgba($white, 1)}'/></svg>") !default;
-$form-switch-dark-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{rgba($white, 1)}'/></svg>") !default;
+$form-switch-dark-bg-image: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{rgba($white, 1)}'/></svg>") !default;
+$form-switch-dark-checked-bg-image: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{rgba($white, 1)}'/></svg>") !default;
 
 $form-select-bg-size: 14px 8px !default;
 $form-select-indicator-color: var(--#{$prefix}gray-500) !default;
-$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M1 1L7 7L13 1'/></svg>") !default;
+$form-select-indicator: url("data:image/svg+xml,<svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 14 8'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M1 1L7 7L13 1'/></svg>") !default;
 
 $form-select-border-radius: $input-border-radius !default;
 $form-select-box-shadow: 0 0 !default;
@@ -572,9 +572,9 @@ $form-feedback-valid-color: $success !default;
 $form-feedback-invalid-color: $danger !default;
 
 $form-feedback-icon-valid-color: $form-feedback-valid-color !default;
-$form-feedback-icon-valid: url("data:image/svg+xml,<svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999' stroke='#2CD4A2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M22 4L12 14.01L9 11.01' stroke='#2CD4A2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") !default;
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg viewBox='0 0 24 24' fill='none' xmlns='https://www.w3.org/2000/svg'><path d='M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999' stroke='#2CD4A2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M22 4L12 14.01L9 11.01' stroke='#2CD4A2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") !default;
 $form-feedback-icon-invalid-color: $form-feedback-invalid-color !default;
-$form-feedback-icon-invalid: url("data:image/svg+xml,<svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z' stroke='#F9655B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 8V12' stroke='#F9655B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 16H12.01' stroke='#F9655B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") !default;
+$form-feedback-icon-invalid: url("data:image/svg+xml,<svg viewBox='0 0 24 24' fill='none' xmlns='https://www.w3.org/2000/svg'><path d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z' stroke='#F9655B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 8V12' stroke='#F9655B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 16H12.01' stroke='#F9655B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") !default;
 
 $form-feedback-bg-size: 1.5rem 1.5rem !default;
 
