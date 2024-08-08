@@ -1,0 +1,124 @@
+// GENERICS
+
+body {
+  background-color: $white;
+}
+
+::selection {
+  background-color: $dark;
+  color: $white;
+}
+
+a {
+  text-decoration: underline;
+
+  &.btn {
+    text-decoration: none;
+  }
+
+  &:focus-visible:not(.navbar-brand) {
+    background-color: $primary-dark;
+    color: $white;
+    padding: map-get($spacers, 1) 0;
+    text-decoration: none;
+  }
+}
+
+div[title] {
+  cursor: default;
+}
+
+span[title] {
+  cursor: default;
+  text-decoration: underline;
+}
+
+// CLASSES
+
+.bg-dark ::selection {
+  background-color: $white;
+  color: $dark;
+}
+
+.btn-close {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+  background-origin: padding-box;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  height: 0.75em;
+  opacity: 1;
+  transition: 0.1s;
+  width: 0.75em;
+
+  &:hover {
+    background-size: 1em;
+    height: 1em;
+    opacity: 1;
+    right: -0.123em;
+    top: -0.123em;
+    transition: 0.1s;
+    width: 1em;
+  }
+}
+
+.footer .row {
+  justify-content: space-between;
+}
+
+.form-control {
+  background-color: $white;
+  border-color: $gray-500;
+  border-radius: 0.5rem;
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray-800;
+  }
+}
+
+.form-group {
+  ul {
+    margin-bottom: map-get($spacers, 4);
+    margin-top: map-get($spacers, 2);
+    padding-left: 0;
+  }
+
+  li {
+    background-color: $white;
+    color: $warning;
+    list-style: none;
+  }
+}
+
+.help-text {
+  font-size: $font-size-sm;
+  margin-bottom: 0;
+}
+
+.list-checked > li::before {
+  content: '✓';
+  font-family: inherit;
+}
+
+.navbar .container {
+  justify-content: center;
+}
+
+.text-white-80 a {
+  background-color: $dark;
+  color: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    color: $white !important;
+  }
+
+  &:focus-visible {
+    background-color: $white;
+    color: $dark !important;
+  }
+}

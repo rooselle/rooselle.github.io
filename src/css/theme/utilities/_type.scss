@@ -1,0 +1,44 @@
+// Colors
+
+a.text-white-60:hover {
+  color: fade-out($white, 0.2) !important;
+}
+
+// Underline
+
+[class*='text-underline-'] {
+  background: repeat-x left 1em / 1em 0.15em;
+}
+
+@each $color, $value in $theme-colors {
+  .text-underline-#{$color} {
+    @if $color== 'warning' {
+      background-image: linear-gradient(
+        to right,
+        fade-out($value, 0.6),
+        fade-out($value, 0.6)
+      );
+    } @else {
+      background-image: linear-gradient(
+        to right,
+        fade-out($value, 0.8),
+        fade-out($value, 0.8)
+      );
+    }
+  }
+}
+
+// Aa text (demo only)
+
+#text-aa-serif,
+#text-aa-sans-serif {
+  transition: $transition-base;
+}
+
+#text-aa-serif {
+  color: var(--#{$prefix}white);
+}
+
+#text-aa-sans-serif {
+  color: rgba($white, 0.2);
+}

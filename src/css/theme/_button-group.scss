@@ -1,0 +1,9 @@
+.btn-group {
+  @if ($enable-shadows) {
+    box-shadow: var(--#{$prefix}btn-box-shadow);
+  }
+}
+
+.btn-group .btn {
+  box-shadow: none;
+}

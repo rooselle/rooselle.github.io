@@ -1,0 +1,22 @@
+.rsl-about {
+  p:not(.h1) {
+    font-size: $font-size-lg;
+  }
+
+  p {
+    margin-bottom: $spacer;
+  }
+}
+
+.rsl-icon {
+  font-size: 1.5rem;
+  flex: 0 0 1.5rem;
+}
+
+.rsl-logo {
+  text-align: center;
+}
+
+.rsl-list-arrow > li::before {
+  content: '➞';
+}
