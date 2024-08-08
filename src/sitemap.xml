@@ -2,12 +2,17 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://roselle.co/</loc>
-        <lastmod>2022-06-29T19:00:00+00:00</lastmod>
+        <lastmod>2024-08-08T15:00:00+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://roselle.co/developpement-ecoresponsable</loc>
         <lastmod>2022-06-29T19:00:00+00:00</lastmod>
         <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://roselle.co/mentions-legales</loc>
+        <lastmod>2024-08-08T15:00:00+00:00</lastmod>
+        <priority>0.30</priority>
     </url>
 </urlset>
