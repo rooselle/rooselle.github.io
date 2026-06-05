@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap");
+
+@import "tailwindcss";
+
+@source "..";
+
+@theme {
+  /* Fonts */
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "DM Serif Display", serif;
+
+  /* Colors */
+  --color-primary: #43522d;
+  --color-primary-dark: #384526;
+  --color-primary-light: #4d5e34;
+  --color-success: #15634c;
+  --color-info: #4b596e;
+  --color-warning: #7d4e09;
+  --color-danger: #b01207;
+  --color-dark: #20232a;
+  --color-light: #fff4f1;
+  --color-gray-100: #fff4f1;
+  --color-gray-200: #ebd3cd;
+  --color-gray-300: #d6b2a9;
+  --color-gray-500: #ac8880;
+  --color-gray-600: #82645f;
+  --color-gray-800: #3c3134;
+  --color-gray-900: #2e2a2f;
+  --color-black: #20232a;
+}
+
+@layer base {
+  html {
+    overflow-x: hidden;
+  }
+
+  @media (hover: none) {
+    body {
+      overflow-x: hidden;
+    }
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #20232a;
+    background-color: #fff;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  ::selection {
+    background-color: #20232a;
+    color: #fff;
+  }
+
+  a {
+    color: #43522d;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #384526;
+  }
+
+  a:focus-visible:not(.navbar-brand) {
+    background-color: #384526;
+    color: #fff;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+    outline: none;
+  }
+
+  span[title] {
+    cursor: default;
+    text-decoration: underline;
+  }
+
+  div[title] {
+    cursor: default;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 2rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+  }
+
+  h1, .h1,
+  h2, .h2 {
+    line-height: 1.32;
+  }
+
+  h1, .h1 {
+    font-size: 1.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  h2, .h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  @media (min-width: theme(--breakpoint-md)) {
+    h1, .h1 {
+      font-size: 2.25rem;
+    }
+
+    h2, .h2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  h3, .h3 {
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: theme(--breakpoint-md)) {
+    h3, .h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    line-height: 1.6;
+  }
+
+  hr {
+    border: none;
+    background-color: currentColor;
+    height: 1px;
+    margin-block: 1rem;
+    display: block;
+  }
+}
+
+@layer components {
+  /* ─── Navbar ─── */
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fff4f1;
+    width: 100%;
+  }
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    font-family: "DM Serif Display", serif;
+    color: #20232a;
+    text-decoration: none;
+  }
+
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    color: #20232a;
+    text-decoration: none;
+  }
+
+  /* ─── Display headings ─── */
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  /* Mobile sizes (× 0.9375 from theme) */
+  .display-3 {
+    font-size: 2.34375rem;
+  }
+
+  .display-4 {
+    font-size: 2.109375rem;
+  }
+
+  @media (min-width: theme(--breakpoint-md)) {
+    .display-3 {
+      font-size: 3.75rem;
+    }
+
+    .display-4 {
+      font-size: 2.8125rem;
+    }
+  }
+
+  /* ─── Heading size classes ─── */
+  .h2 {
+    display: block;
+  }
+
+  .h6 {
+    font-size: 0.875rem;
+  }
+
+  h6.uppercase,
+  .h6.uppercase {
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
+  /* ─── Button ─── */
+  .btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    border: 1px solid transparent;
+    border-radius: 0.5rem 0 0.5rem 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  }
+
+  .btn-primary {
+    background-color: #43522d;
+    color: #fff;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #384526;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* ─── HR small ─── */
+  .hr-sm {
+    max-width: 5rem;
+    margin-top: 0;
+    height: 5px;
+  }
+
+  /* ─── List styles ─── */
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .list-inline-item {
+    display: inline-block;
+  }
+
+  .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .list-checked {
+    padding-left: 0;
+    text-align: left;
+    list-style-type: none;
+  }
+
+  .list-checked > li {
+    position: relative;
+    padding-left: 2.25rem;
+  }
+
+  .list-checked > li + li {
+    margin-top: 0.75rem;
+  }
+
+  .list-checked > li::before {
+    content: "✓";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .list-checked-circle > li::before {
+    top: calc(1.6 * 1rem - 1.25rem);
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    content: "✓";
+  }
+
+  .list-checked-circle.list-checked-primary > li::before {
+    background-color: #43522d;
+    color: #fff;
+  }
+
+  /* ─── Text underline ─── */
+  [class*="text-underline-"] {
+    background: repeat-x left 1em / 1em 0.15em;
+  }
+
+  .text-underline-success {
+    background-image: linear-gradient(
+      to right,
+      rgba(21, 99, 76, 0.2),
+      rgba(21, 99, 76, 0.2)
+    );
+  }
+
+  /* ─── Footer ─── */
+  .footer .row {
+    justify-content: space-between;
+  }
+
+  /* ─── Dark background selection ─── */
+  .bg-dark ::selection {
+    background-color: #fff;
+    color: #20232a;
+  }
+
+  /* ─── text-white-80: semi-transparent text + link overrides ─── */
+  .text-white-80 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .text-white-80 a {
+    background-color: #20232a;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+  }
+
+  .text-white-80 a:hover {
+    color: #fff !important;
+  }
+
+  .text-white-80 a:focus-visible {
+    background-color: #fff;
+    color: #20232a !important;
+  }
+
+  /* ─── Font utilities ─── */
+  .font-sans-serif {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* ─── Custom site classes ─── */
+  .rsl-about p:not(.h1) {
+    font-size: 1.25rem;
+  }
+
+  .rsl-about p {
+    margin-bottom: 1rem;
+  }
+
+  .rsl-icon {
+    font-size: 1.5rem;
+    flex: 0 0 1.5rem;
+  }
+
+  .rsl-logo {
+    text-align: center;
+  }
+
+  .rsl-list-arrow > li::before {
+    content: "➞";
+  }
+}
+
+@layer utilities {
+  /* ─── Container — overrides Tailwind's built-in ─── */
+  .container {
+    width: 100%;
+    padding-inline: 1rem;
+    margin-inline: auto;
+  }
+
+  @media (min-width: theme(--breakpoint-sm)) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-md)) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-lg)) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-xl)) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  .container-lg {
+    width: 100%;
+    padding-inline: 1rem;
+    margin-inline: auto;
+  }
+
+  @media (min-width: theme(--breakpoint-sm)) and (max-width: calc(theme(--breakpoint-md) - 1px)) {
+    .container-lg {
+      max-width: 90%;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-md)) and (max-width: calc(theme(--breakpoint-lg) - 1px)) {
+    .container-lg {
+      max-width: 95%;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-lg)) {
+    .container-lg {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-xl)) {
+    .container-lg {
+      max-width: 1140px;
+    }
+  }
+
+  /* ─── Flexbox grid — overrides Tailwind's col-* grid utilities ─── */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -1rem;
+  }
+
+  [class^="col-"],
+  [class*=" col-"] {
+    padding-inline: 1rem;
+    width: 100%;
+    position: relative;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  @media (min-width: theme(--breakpoint-md)) {
+    .col-md {
+      flex: 1 0 0%;
+      width: auto;
+    }
+
+    .col-md-4 {
+      width: 33.3333%;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    .col-md-7 {
+      width: 58.3333%;
+    }
+
+    .col-md-10 {
+      width: 83.3333%;
+    }
+  }
+
+  @media (min-width: theme(--breakpoint-lg)) {
+    .col-lg-4 {
+      width: 33.3333%;
+    }
+
+    .col-lg-5 {
+      width: 41.6667%;
+    }
+
+    .col-lg-8 {
+      width: 66.6667%;
+    }
+
+    .col-lg-10 {
+      width: 83.3333%;
+    }
+  }
+
+  /* ─── Custom utility classes ─── */
+  .fs-lg {
+    font-size: 1.25rem;
+  }
+
+  .fs-sm {
+    font-size: 1rem;
+  }
+
+  .fw-bold {
+    font-weight: 500;
+  }
+
+  .small {
+    font-size: 88%;
+  }
+}
